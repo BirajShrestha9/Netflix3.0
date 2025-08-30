@@ -22,6 +22,7 @@
   border-radius: 51px;
   color: white;
   font-size: 18px;
+  cursor: pointer;
 }
 .getStarted_Btn {
   background-color: red;
@@ -224,4 +225,71 @@
   padding: 15px;
   font-size: 21px;
   margin-bottom: 1rem;
+}
+.termsUse {
+  display: grid;
+  height: 17rem;
+  padding: 4rem;
+  grid-template-columns: 100px 110px 121px 173px;
+  column-gap: 13rem;
+  row-gap: 0rem;
+  font-size: 19px;
+  color: white;
+  padding-left: 5rem;
+  margin-top: 3rem;
+  background-color: #3f3c3c;
+  a {
+    color: white;
+    width: auto;
+  }
+  a:hover {
+    color: rgb(141, 140, 140);
+  }
+}
+.newSignIn {
+  display: flex;
+  padding: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  /* top: 100px; */
+  /* left: 25rem; */
+  width: 20rem;
+  color: white;
+  background-color: #000000c2;
+
+  input {
+    padding: 1rem;
+    border: 1px white solid;
+    color: white;
+    width: 16rem;
+    background-color: rgba(62, 60, 60, 0.418);
+  }
+  .checkbox {
+    align-self: self-start;
+  }
+  .signCode {
+    background-color: rgba(62, 60, 60, 0.418);
+    border: none;
+    height: 37px;
+    color: white;
+    font-size: 18px;
+  }
+  button {
+    background-color: red;
+    border: none;
+    width: 18rem;
+    height: 37px;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  button::hover {
+    filter: drop-shadow(black);
+  }
+  a {
+    color: white;
+  }
 }

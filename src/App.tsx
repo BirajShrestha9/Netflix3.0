@@ -1,12 +1,14 @@
 import "./App.css";
+import { useState } from "react";
 import FAQ from "./FAQ";
 import Navigation from "./Navigation";
 import ReasonsToJoin from "./ReasonsToJoin";
+import TermsOfUse from "./TermsOfUse";
 import TrendingMovies from "./TrendingMovies";
 import UnlimitedMovies from "./UnlimitedMovies";
 
 function App() {
-  // const [count, setCount] = useState(0);
+  const [isSigned, setIsSigned] = useState<boolean>(false);
 
   return (
     <>
@@ -16,11 +18,13 @@ function App() {
           src="../public/img/netflixBG.png"
           alt="netflixBG"
         />
-        <Navigation />
-        <UnlimitedMovies />
+        <Navigation setIsSigned={setIsSigned} isSigned={isSigned} />
+
+        <UnlimitedMovies isSigned={isSigned} />
         <TrendingMovies />
         <ReasonsToJoin />
         <FAQ />
+        <TermsOfUse />
       </div>
     </>
   );

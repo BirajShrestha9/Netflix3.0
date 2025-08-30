@@ -1,0 +1,227 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.netflix {
+  width: 8rem;
+  height: 2rem;
+}
+.netflixBG {
+  width: 100%;
+  top: -9px;
+  position: absolute;
+  z-index: -1;
+  height: 362vh;
+}
+.signIn {
+  background-color: red;
+  border: none;
+  height: 37px;
+  width: 89px;
+  border-radius: 51px;
+  color: white;
+  font-size: 18px;
+}
+.getStarted_Btn {
+  background-color: red;
+  border: none;
+  height: 37px;
+  width: 135px;
+  border-radius: 51px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.navigation {
+  margin-top: 1rem;
+  display: flex;
+  height: 60px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(18, 2, 32, 0.345);
+  padding: 10px 30px;
+}
+
+.frontImg {
+  z-index: -1;
+  max-width: 100%;
+  height: auto;
+  display: block;
+
+  img {
+    max-width: 100%;
+  }
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.55);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 106%;
+  }
+}
+.firstSection {
+  position: absolute;
+  top: 11rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.frontText {
+  font-size: 80px;
+  width: 52rem;
+  color: white;
+  height: fit-content;
+  text-align: center;
+}
+.Movies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  height: 26rem;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+.price {
+  font-size: 1.8rem;
+  margin: 26px 0px 32px;
+  text-align: center;
+}
+.emailAddress {
+  width: 400px;
+  height: 41px;
+  background-color: grey;
+  border-radius: 47px;
+  color: white;
+  font-size: 16px;
+  border: 1px solid white;
+  margin: 32px 20px;
+}
+.emailAddress::placeholder {
+  color: white;
+  padding: 10px;
+  margin-left: 29px;
+}
+
+.Start {
+  display: flex;
+  align-items: center;
+}
+
+.Trending {
+  color: white;
+  position: relative;
+  top: 2rem;
+  margin-bottom: 3rem;
+
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 4rem;
+  }
+}
+.Trending div {
+  display: flex;
+  gap: 19px;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  position: relative;
+  top: -26px;
+}
+
+.trendPic {
+  width: 15%;
+  border-radius: 18px;
+  transition: transform 0.3s ease;
+  margin: 8px;
+}
+.trendPic:hover {
+  transform: scale(1.04);
+  cursor: pointer;
+}
+
+.scrollBtn {
+  width: 65px;
+  height: 65px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3rem;
+}
+.scrollBtn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.1s ease-in-out;
+}
+.Container {
+  color: white;
+  width: 12rem;
+  height: 10rem;
+  background-color: chocolate;
+  border-radius: 2rem;
+  padding: 1rem;
+  h2 {
+    margin-bottom: 1rem;
+  }
+  p {
+    font-size: 16px;
+  }
+}
+.wholeContainer {
+  display: grid;
+  row-gap: 34px;
+  column-gap: 4rem;
+  /* justify-content: flex-start; */
+  justify-content: space-around;
+  grid-template-columns: 14rem 14rem 14rem 14rem;
+
+  h1 {
+    grid-column: 1 / 5;
+    text-align: center;
+    font-size: 48px;
+    color: white;
+  }
+}
+.faqContainer {
+  margin-top: 4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 4rem;
+  }
+}
+.faqQuest {
+  font-size: 25px;
+  margin-bottom: 1rem;
+  width: 50rem;
+  padding: 10px;
+  background-color: rgb(66, 66, 66);
+  display: flex;
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s;
+}
+.faqQuest:hover {
+  background-color: rgb(92, 92, 92);
+}
+.rightSign {
+  width: 2rem;
+  filter: invert(100%);
+}
+.wrongSign {
+  width: 2rem;
+  filter: invert(100%);
+  transform: rotate(45deg);
+}
+.faqAns {
+  background-color: #8f4b4b;
+  width: 50rem;
+  padding: 15px;
+  font-size: 21px;
+  margin-bottom: 1rem;
+}
